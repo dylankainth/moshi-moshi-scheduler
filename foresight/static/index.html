@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foresight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true"></span>Foresight</div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-view="now" role="tab">Task</button>
+    <button class="tab" data-view="calibration" role="tab">Calibration</button>
+    <button class="tab" data-view="privacy" role="tab">Privacy</button>
+    <button class="tab" data-view="system" role="tab">System</button>
+  </nav>
+  <div class="badges">
+    <span id="mode-badge" class="badge">…</span>
+    <button id="demo-toggle" class="badge demo-badge" hidden></button>
+  </div>
+</header>
+
+<main>
+  <section id="view-now" class="view"></section>
+  <section id="view-calibration" class="view" hidden></section>
+  <section id="view-privacy" class="view" hidden></section>
+  <section id="view-system" class="view" hidden></section>
+</main>
+
+<footer class="foot">No screenshots, keystrokes or clipboard, ever. <span id="foot-mode"></span></footer>
+<script src="/app.js"></script>
+</body>
+</html>
